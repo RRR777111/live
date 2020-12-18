@@ -1,0 +1,63 @@
+//スライダー全体の大きさ
+.swiper-container {
+    margin-right: auto;
+    width: 50%;
+    height: 100vh;
+}
+
+.swiper-slide {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    font-size: 32px;
+    letter-spacing: .2em;
+}
+
+// ---------------------------------------------------------
+// ナビゲーション
+// ---------------------------------------------------------
+
+
+/* ナビゲーション共通 */
+.swiper-button-prev,
+.swiper-button-next {
+	background-image: none; /* ボタン画像を消す */
+	width: 28px; /* ボタン幅 */
+	height: 86px; /* ボタン高さ */
+	margin-top: -43px; /* ボタンの高さの半分のネガティブマージン（top:50%が設定済み） */
+}
+
+// /* 前ボタン */
+// .swiper-button-prev:before {
+// 	font-family: "Font Awesome 5 Free";
+// 	content: "\f100";
+// 	font-size: 48px;
+// 	color: #ffefd5;
+// }
+// /* 次ボタン */
+// .swiper-button-next:before {
+// 	font-family: "Font Awesome 5 Free";
+// 	content: "\f101";
+// 	font-size: 48px;
+// 	color: #ffefd5;
+// }
+
+// ---------------------------------------------------------
+// ページネーション
+// ---------------------------------------------------------
+
+
+// /* 全体のスタイル */
+// .swiper-pagination-bullet {
+// 	width: 12px; /* 幅 */
+// 	height: 12px; /* 高さ */
+// 	background: #9acd32; /* 色：緑 */
+// 	opacity: 0.2; /* 半透明 */
+// }
+// /* 現在のスライドのスタイル */
+// .swiper-pagination-bullet-active {
+// 	width: 20px; /* 幅 */
+// 	height: 20px; /* 高さ */
+// 	background: #ffd700; /* 色：黄色 */
+// 	opacity: 1; /* 不透明 */
+// }
