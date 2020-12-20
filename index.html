@@ -6,7 +6,9 @@
   <title>live</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link href="css/style.css" rel="stylesheet" media="all">
 </head>
@@ -14,7 +16,33 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      
+      <p class="header__box"><a href="#" class="header__link"><img src="img/icon.svg" alt="アイコン"
+            class="header__icon"></a></p>
+      <h1 class="header__ttl">LIVE</h1>
+      <h2 class="header__sb-ttl">OFFICIAL WEBSITE</h2>
+
+      <div class="btn" id="btn">
+        <span class="btn__top" id="top"></span>
+        <span class="btn__middle" id="middle"></span>
+        <span class="btn__bottom" id="bottom"></span>
+      </div>
+
+      <nav class="gnav" id="gnav">
+        <ul class="gnav__nav">
+          <li class="gnav__list"><a href="#album" class="gnav__link">ALBUM</a></li>
+          <li class="gnav__list"><a href="#news" class="gnav__link">NEWS</a></li>
+          <li class="gnav__list"><a href="#sns" class="gnav__link">SNS</a></li>
+        </ul>
+
+        <div class="gnav__ttl">SNSで最新の情報をチェック！</div>
+        <div class="gnav__con">
+          <p class="gnav__pic"><img src="img/twitter.svg" alt="アイコン" class="gnav__icon"></p>
+          <p class="gnav__pic"><img src="img/line.svg" alt="アイコン" class="gnav__icon"></p>
+          <p class="gnav__pic"><img src="img/instagram.svg" alt="アイコン" class="gnav__icon"></p>
+          <p class="gnav__pic"><img src="img/youtube.svg" alt="アイコン" class="gnav__icon"></p>
+        </div>
+      </nav>
+
     </header>
 
     <main class="main">
@@ -26,11 +54,53 @@
         </div>
       </div>
 
+      <section class="album" id="album">
+        <h2 class="album__ttl">ALBUM</h2>
+        <p class="album__pic"><img src="img/img1.png" alt="写真" class="album__img1"></p>
+        <p class="album__pic"><img src="img/img2.png" alt="写真" class="album__img2"></p>
+      </section>
+
+      <section class="news" id="news">
+        <h2 class="news__ttl">NEWS</h2>
+
+        <dl class="news__con">
+          <dt class="news__dete">2020.12.14</dt>
+          <dd class="news__txt">
+            発売シングル「ー」予約・購入者特典が決定
+          </dd>
+        </dl>
+
+        <dl class="news__con">
+          <dt class="news__dete">2020.11.18</dt>
+          <dd class="news__txt">
+            新曲の歌詞「ー」について
+          </dd>
+        </dl>
+
+        <dl class="news__con">
+          <dt class="news__dete">2020.09.18</dt>
+          <dd class="news__txt">
+            ニューシングル発売決定！
+          </dd>
+        </dl>
+      </section>
+
+      <section class="sns" id="sns">
+        <div class="sns__ttl">SNSで最新の情報をチェック！</div>
+        <div class="sns__con">
+          <p class="sns__pic"><img src="img/twitter.svg" alt="アイコン" class="sns__icon"></p>
+          <p class="sns__pic"><img src="img/line.svg" alt="アイコン" class="sns__icon"></p>
+          <p class="sns__pic"><img src="img/instagram.svg" alt="アイコン" class="sns__icon"></p>
+          <p class="sns__pic"><img src="img/youtube.svg" alt="アイコン" class="sns__icon"></p>
+        </div>
+      </section>
+
     </main>
+
     <footer class="footer">
       <p class="footer__txt"><small class="footer__copy">
-        &copy;copyright
-      </small></p>
+          &copy;copyright
+        </small></p>
     </footer>
   </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

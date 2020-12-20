@@ -1,0 +1,220 @@
+.header {
+  &__icon {
+    width: 64px;
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+  }
+
+  &__ttl {
+    margin-bottom: 3%;
+    padding-top: 70%;
+    font-size: 68px;
+    font-family: $font;
+
+    @include mediaS {
+      padding-top: 50%;
+    }
+
+    @include mediaM {
+      font-size: 38px;
+      position: absolute;
+      bottom: 10%;
+    }
+  }
+
+  &__sb-ttl {
+    font-size: 32px;
+    font-family: $font;
+    letter-spacing: 0.1em;
+
+    @include mediaM {
+      font-size: 14px;
+      position: absolute;
+      bottom: 10%;
+    }
+  }
+}
+
+.gnav {
+  &__nav {
+    margin: 0 auto 132px;
+    padding-top: 30%;
+  }
+
+  &__ttl {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  &__con {
+    padding: 0 25%;
+    display: flex;
+    justify-content: space-around;
+
+    @include mediaM {
+      padding: auto;
+    }
+  }
+
+  &__icon {
+    margin: 0 10px 88px;
+    width: 50px;
+    height: 50px;
+
+    @include mediaM {
+      width: 30px;
+    }
+  }
+
+  &__link {
+    padding-right: 200%;
+    margin: 20% 0 60%;
+    color: #000;
+    font-size: 64px;
+    font-family: $font;
+    text-decoration: none;
+    display: block;
+    transition: .3s ease;
+
+    @include mediaM {
+      margin: 5% 0 15%;
+    }
+
+    &:hover {
+      width: 100%;
+      background: linear-gradient(88deg, rgba(186, 210, 224, .3) 2%, rgba(186, 209, 224, .3) 2%, rgba(247, 186, 247, .3) 100%);
+      display: block;
+    }
+  }
+}
+
+.btn {
+  &__top {
+    width: 100%;
+    height: 2px;
+    background: #000;
+    display: block;
+    position: absolute;
+    transform: translateY(15px);
+    transition: .3s ease;
+  }
+
+  &__middle {
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    display: block;
+    transition: .3s ease;
+  }
+
+  &__bottom {
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    display: block;
+    transform: translateY(-15px);
+    transition: .3s ease;
+  }
+}
+
+
+.album {
+  &__ttl {
+    width: 100%;
+    margin-bottom: 64px;
+    font-size: 38px;
+    font-family: $font;
+  }
+
+  &__pic {
+    width: 50%;
+    display: inline-block;
+  }
+
+  &__img1 {
+    width: 90%;
+    height: auto;
+    display: block;
+  }
+
+  &__img2 {
+    width: 90%;
+    height: auto;
+    display: block;
+  }
+
+}
+
+.news {
+  &__ttl {
+    margin-bottom: 64px;
+    font-size: 38px;
+    font-family: $font;
+
+  }
+
+  &__con {
+    margin-bottom: 88px;
+  }
+
+  &__dete {
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-family: $font;
+    color: #888;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      margin-left: 5%;
+      width: 100%;
+      height: 1px;
+      background: #888;
+      display: block;
+    }
+  }
+
+  &__txt {
+    font-size: 14px;
+  }
+}
+
+.sns {
+  &__ttl {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+  }
+
+  &__con {
+    display: flex;
+    justify-content: space-around;
+
+    @include mediaS {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  &__icon {
+    width: 100px;
+
+    @include mediaS {
+      width: 30px;
+    }
+  }
+}
+
+.footer {
+  &__copy {
+    font-size: 14px;
+    display: block;
+    color: #888;
+  }
+}

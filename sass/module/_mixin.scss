@@ -1,0 +1,11 @@
+@mixin mediaS($width-media: 768px) {
+  @media screen and(min-width:$width-media) {
+    @content
+  }
+}
+
+@mixin mediaM($width-madia: 1024px) {
+  @media screen and(min-width: $width-madia) {
+    @content
+  }
+}

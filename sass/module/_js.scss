@@ -1,0 +1,18 @@
+.transTop {
+  transform: rotate(-45deg);
+  transform-origin: middle middle;
+}
+
+.transMiddle {
+  opacity: 0;
+}
+
+.transBottom {
+  transform: rotate(45deg);
+  transform-origin: middle middle;
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+}

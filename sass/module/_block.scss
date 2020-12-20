@@ -1,0 +1,84 @@
+.wrapper {
+  font-size: 14px;
+  background: linear-gradient(88deg, rgba(186, 210, 224, .3) 2%, rgba(186, 209, 224, .3) 2%, rgba(247, 186, 247, .3) 100%);
+}
+
+.header {
+  margin-bottom: 64px;
+  padding: 0 5%;
+  width: 100%;
+  height: 50vh;
+
+  @include mediaM {
+    padding-left: 55%;
+    height: 100vh;
+  }
+}
+
+.gnav {
+  padding: 35%;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease-in;
+
+  @include mediaM {
+    padding: 0;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.btn {
+  @extend %flex-center;
+  width: 40px;
+  height: 30px;
+  position: fixed;
+  top: 5%;
+  right: 7%;
+  z-index: 100;
+  flex-direction: column;
+}
+
+.main {
+  @include mediaM {
+    padding-left: 50%;
+  }
+}
+
+.album {
+  margin-bottom: 132px;
+  padding: 0 10%;
+  max-width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news {
+  margin-bottom: 132px;
+  padding: 0 10%;
+}
+
+.sns {
+  padding: 0 10% 132px;
+}
+
+.footer {
+  @extend %flex-center;
+  width: 100%;
+  height: 150px;
+
+  @include mediaM {
+    padding-left: 50%;
+  }
+}
